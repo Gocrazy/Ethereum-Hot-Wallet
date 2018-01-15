@@ -1,0 +1,70 @@
+> web3.eth.accounts
+web3.eth.accounts
+miner.start(1)
+miner.stop()
+web3.eth.getBalance('0xe73c6aa49d824a83f57f7558110560bb042e57fc')
+web3.eth.accounts
+acc0 = web3.eth.accounts[0]
+acc1 = web3.eth.accounts[1]
+acc0
+acc1
+web3.eth.sendTransaction({from:acc0,to:acc1,value:web3.toWei(3,"ether")})
+web3.eth.sendTransaction({from:acc0,to:acc1,value:web3.toWei(1,"ether")})
+web3.eth.sendTransaction({from:acc0,to:acc1,value:web3.toWei(0,"ether")})
+miner.start(1)
+web3.eth.sendTransaction({from:acc0,to:acc1,value:web3.toWei(1,"ether")})
+function checkAllBalances() {
+     var totalBal = 0;
+     for (var acctNum in eth.accounts) {
+         var acct = eth.accounts[acctNum];
+         var acctBal = web3.fromWei(eth.getBalance(acct), "ether");
+         totalBal += parseFloat(acctBal);
+         console.log("  eth.accounts[" + acctNum + "]: \t" + acct + " \tbalance: " + acctBal + " ether");
+     }
+     console.log("  Total balance: " + totalBal + " ether");
+ };
+checkAllBalances();
+web3.eth.sendTransaction({from:acc0,to:acc1,value:web3.toWei(1,"ether")})
+checkAllBalances();
+miner.stop()
+admin.nodeInfo()
+checkAllBalances();
+miner.stop()
+admin.nodeInfo
+eth.getBlock
+eth.getBlock()
+eth.getBlock('0x5e1fc79cb4ffa4739177b5408045cd5d51c6cf766133f23f7cd72ee1f8d790e0')
+eth.getBlock('0x5e1fc79cb4ffa4739177b5408045cd5d51c6cf766')
+eth.getBlock()
+eth.getBlockNumber()
+eth.getBlockNumber
+eth.getAccounts()
+eth.getAccounts
+eth.getBlock(1000)
+eth.getBlock(0)
+eth.getBlock(1)
+eth.getBlock(2)
+eth.eth.getTransactionCount
+eth.eth.getTransactionCount()
+eth.eth.getTransactionCount(1)
+eth.eth.getTransactionCount(0)
+checkAllBalances();
+eth
+eth.getBlock(100)
+eth.getBlock(2)
+eth.getTransactionFromBlock(0)
+eth.getTransactionFromBlock("0x57e545b4e0c506ec412e59319983c73b1a557ed46509eb0f4a9034504cd7a56a")
+eth.getTransactionCount()
+eth.getTransactionCount
+eth.getAccounts
+eth.getAccounts()
+miner.start()
+miner.stop()
+eth.getAccounts()
+eth.getAccounts
+eth.getAccounts()
+eth.accounts
+miner.stop()
+miner.start(4)
+miner.start
+miner.start()

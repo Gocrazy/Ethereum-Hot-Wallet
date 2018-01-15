@@ -8,9 +8,9 @@
 * geth command: geth -rpc -rpcaddr "localhost" --rpcport 8545  --rpcapi web3,eth,miner,admin --datadir "./chain" --nodiscover console 2>>eth_output.log 
 ---
 * API:
-    - /admin.nodeinfo (require login: basic authenticate user:admin password:1234)
-    - /miner method: PUT start miner (require login).
-    - /miner method: DELETE stop miner (require login).
+    - /admin.nodeinfo 
+    - /miner method: PUT start miner .
+    - /miner method: DELETE stop miner .
     - /block method: GET query block by number.
         - request:
             - number (Integer)
